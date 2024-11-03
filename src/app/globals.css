@@ -4,18 +4,168 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: black;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: black;
     --foreground: #ededed;
   }
+}
+
+@font-face {
+  font-family: 'Blatant';
+  src: url('/fonts/Blatant.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Blatant';
+  src: url('/fonts/Blatant-Bold.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Blatant';
+  src: url('/fonts/Blatant-Italic.otf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Blatant';
+  src: url('/fonts/Blatant-BoldItalic.otf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Archivo';
+  src: url('/fonts/Archivo-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Blatant', sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.font-archivo{
+  font-family: 'Archivo', sans-serif;
+}
+
+
+/* BORDERS */
+.border-blue{
+  border-color: #1214FD;
+}
+
+/* BUTTONS */
+.blue-btn {
+  background-color: #1214fd;
+  color: white;
+  padding: 7.5px 15px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .blue-btn {
+    background-color: #1214fd;
+    color: white;
+    padding: 7.5px 15px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1024px) {
+  .blue-btn {
+    background-color: #1214fd;
+    color: white;
+    padding: 7.5px 15px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1280px) {
+  .blue-btn {
+    background-color: #1214fd;
+    color: white;
+    padding: 16px 28px;
+    font-weight: 700;
+  }
+}
+
+.white-btn{
+  background-color: white;
+  color: #1214FD;
+  padding: 16px 24px;
+  font-weight: 700;
+}
+
+/* BACKGROUND COLORS */
+.bg-red{
+  background-color: #C41414;
+}
+
+.bg-blue{
+  background-color: #1214FD;
+}
+
+.bg-gray{
+  background-color: #686868;
+}
+
+.bg-dark-gray{
+  background-color: #151519;
+}
+
+/* TEXT */
+.text-small{
+  font-size: 14px;
+}
+
+.text-mid{
+  font-size: 24px;
+}
+
+.text-big{
+  font-size: 32px;
+}
+
+.text-bigger{
+  font-size: 48px;
+}
+
+.text-heading{
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.text-blue{
+  color: #1214FD;
+}
+
+.text-green{
+  color: #0BAA00;
+}
+
+/* MARGIN */
+.m-top{
+  margin-top: 4rem;
+}
+
+/* PADDING */
+.padding-x{
+  padding: 0 5rem;
 }
